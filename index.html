@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Book Library</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
   </head>
   <body>
     <div class="container text-center mx-auto">
@@ -14,29 +13,32 @@
 
     </div>
 
-    <div id="library" class="mx-auto flex flex-col sm:flex-row justify-between flex-nowrap">
+    <div class="mx-auto flex flex-col sm:flex-row justify-between flex-nowrap">
 
       <!-- add Book -->
       <div class="max-w-xs mx-auto order-first sm:order-last ">
         <div class="m-2 p-8 bg-gray-300 rounded shadow-lg">
-          <form class="mx-4 mt-8" action="index.html" method="post" name="addBook">
+          <form class="mx-4 mt-8" action="index.html" method="post" name="getBook">
             <div class="">
               <label class="block text-left mb-2" for="title">Book title</label>
-              <input class="mb-4 w-full rounded " type="text" name="title" value="" placeholder="Your book">
+              <input class="mb-4 w-full rounded "
+              type="text" id="title" name="title" placeholder="Your book">
             </div>
             <div class="">
               <label class="block text-left mb-2" for="author">Book author</label>
-              <input class="mb-4" type="text" name="author" value="" placeholder="Author">
+              <input class="mb-4"
+              type="text" id="author" name="author" placeholder="Author">
             </div>
             <div class="">
               <label class="block text-left mb-2" for="pages">Pages</label>
-              <input class="mb-4" type="text" name="pages" value="" placeholder="Numbers">
+              <input class="mb-4"
+              type="text" id="pages" name="pages" placeholder="Numbers">
             </div>
             <div class="flex justify-around">
               <label for="read">Read</label>
-              <input type="radio" name="read" value="read">
+              <input type="radio" name="read" value="true">
               <label for="notread">Not read</label>
-              <input type="radio" name="read" value="notread">
+              <input type="radio" name="read" value="false">
             </div>
               <button class="mt-4 p-2 bg-blue-500 w-full rounded-full hover:bg-blue-400 hover:text-white"
               type="text" id="addBook">Add Book</button>
