@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Library</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container text-center mx-auto">
+      <div class="bg-gray-300 m-4 text-4xl p-4">
+
+      <h1>Book Collection</h1>
+
+    </div>
+
+    <div id="library" class="mx-auto flex flex-col sm:flex-row justify-between flex-nowrap">
+
+      <!-- add Book -->
+      <div class="max-w-xs mx-auto order-first sm:order-last ">
+        <div class="m-2 p-8 bg-gray-300 rounded shadow-lg">
+          <form class="mx-4 mt-8" action="index.html" method="post" name="addBook">
+            <div class="">
+              <label class="block text-left mb-2" for="title">Book title</label>
+              <input class="mb-4 w-full rounded " type="text" name="title" value="" placeholder="Your book">
+            </div>
+            <div class="">
+              <label class="block text-left mb-2" for="author">Book author</label>
+              <input class="mb-4" type="text" name="author" value="" placeholder="Author">
+            </div>
+            <div class="">
+              <label class="block text-left mb-2" for="pages">Pages</label>
+              <input class="mb-4" type="text" name="pages" value="" placeholder="Numbers">
+            </div>
+            <div class="flex justify-around">
+              <label for="read">Read</label>
+              <input type="radio" name="read" value="read">
+              <label for="notread">Not read</label>
+              <input type="radio" name="read" value="notread">
+            </div>
+              <button class="mt-4 p-2 bg-blue-500 w-full rounded-full hover:bg-blue-400 hover:text-white"
+              type="submit" name="addBook">Add Book</button>
+          </form>
+
+        </div>
+      </div>
+        <!-- Book Collection -->
+      <div id="library" class="bg-gray-400 m-1 flex flex-wrap">
+
+        <div id="book" class=" flex-1 ">
+          <div class="w-min-sm bg-white m-3 rounded shadow-lg overflow-hidden">
+		          <img src="https://picsum.photos/1000/600">
+		            <div id="title" class="font-bold text-xl m-1 py-2">Title</div>
+                <div id="author" class="font-bold text-xl m-1 py-2">author</div>
+                <div id="pages" class="font-bold text-xl m-1 py-2">pages</div>
+                <div class="flex justify-around mb-4">
+                  <input type="button" id="isread"  value="Action 2"
+                  class="button text-white bg-green-600 m-1 p-2 hover:bg-green-500"/>
+			            <input type="button" id="del" value="Del"
+                  class="button text-white bg-red-400 m-1 p-2 hover:bg-red-300"/>
+                </div>
+	          </div>
+        </div>
+
+        <div class="flex-1 ">
+          <div class="w-min-sm bg-white m-3 rounded shadow-lg overflow-hidden">
+              <img src="https://picsum.photos/1000/600">
+                <div id="title" class="font-bold text-xl m-1 py-2">Title</div>
+                <div id="author" class="font-bold text-xl m-1 py-2">author</div>
+                <div id="pages" class="font-bold text-xl m-1 py-2">pages</div>
+                <div class="flex justify-around mb-4">
+                  <input type="button" id="isread"  value="Action 2"
+                  class="button text-white bg-green-600 m-1 p-2 hover:bg-green-500"/>
+                  <input type="button" id="del" value="Del"
+                  class="button text-white bg-red-400 m-1 p-2 hover:bg-red-300"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1">
+          <div class="w-min-sm bg-white m-3 rounded shadow-lg overflow-hidden">
+              <img src="https://picsum.photos/1000/600">
+                <div id="title" class="font-bold text-xl m-1 py-2">Title</div>
+                <div id="author" class="font-bold text-xl m-1 py-2">author</div>
+                <div id="pages" class="font-bold text-xl m-1 py-2">pages</div>
+                <div class="flex justify-around mb-4">
+                  <input type="button" id="isread"  value="Action 2"
+                  class="button text-white bg-green-600 m-1 p-2 hover:bg-green-500"/>
+                  <input type="button" id="del" value="Del"
+                  class="button text-white bg-red-400 m-1 p-2 hover:bg-red-300"/>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
